@@ -6,7 +6,7 @@ openai.api_key = "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"
 
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://chatGTPmdb:iamchatgptmdb@chatgpt-database.5xmnhau.mongodb.net/chats"
+app.config["MONGO_URI"] = "mongodb+srv://chatGTPmdb:iamchatgptmdb@chatgpt-database.5xmnhau.mongodb.net/chats?retryWrites=true&w=majority"
 mongo = PyMongo(app)
 
 
